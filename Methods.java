@@ -41,7 +41,7 @@ class Methods{
   
   /*------------------------------------------------------------------------------------*/
   
-   //Generates psuedorandom number 
+   //Generates pseudorandom number 
   public int randomGen(){
     Random generator = new Random(new Date().getTime());
     int randomNumber = (byte)generator.nextInt();
