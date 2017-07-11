@@ -10,13 +10,13 @@ class Methods{
   /*------------------------------------------------------------------------------------*/
   
   public void picDisplay(String pic){
-      JFrame display = new JFrame();
-    ImageIcon icon = new ImageIcon(pic);
-    JLabel myLabel = new JLabel(icon);
-    display.add(myLabel);
-      display.setDefaultCloseOperation
+    JFrame display = new JFrame(); //create frame
+    ImageIcon icon = new ImageIcon(pic); //load Image
+    JLabel myLabel = new JLabel(icon); //add image to a new label
+    display.add(myLabel); //add label to frame
+    display.setDefaultCloseOperation //set default operation for closing
          (JFrame.EXIT_ON_CLOSE);
-    display.pack();
+    display.pack(); 
     display.setVisible(true);
     }//end picDisplay 
   
@@ -28,7 +28,8 @@ class Methods{
     System.out.println("Enter q when you are done learning\n" +
     "or any character to continue");
     String v = scan.next();
-    if(v.toLowerCase().equals("q")){
+     //checks whether user wants to continue
+    if(v.toLowerCase().equals("q")){ 
       loop = false;
       System.out.println("Goodbye");
     }else {
@@ -40,6 +41,7 @@ class Methods{
   
   /*------------------------------------------------------------------------------------*/
   
+   //Generates psuedorandom number 
   public int randomGen(){
     Random generator = new Random(new Date().getTime());
     int randomNumber = (byte)generator.nextInt();
