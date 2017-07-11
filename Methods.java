@@ -1,14 +1,23 @@
 import java.util.Random;
 import java.util.Date;
 import java.util.Scanner;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JFrame;
 
 class Methods{
-  
+    
   /*------------------------------------------------------------------------------------*/
   
   public void picDisplay(String pic){
-    Picture pix = new Picture(pic);
-    pix.show();
+      JFrame display = new JFrame();
+    ImageIcon icon = new ImageIcon(pic);
+    JLabel myLabel = new JLabel(icon);
+    display.add(myLabel);
+      display.setDefaultCloseOperation
+         (JFrame.EXIT_ON_CLOSE);
+    display.pack();
+    display.setVisible(true);
     }//end picDisplay 
   
  
