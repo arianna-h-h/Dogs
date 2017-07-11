@@ -8,6 +8,6 @@ To run this program:<br>
 Clone all files into the same directory on your machine using command line: <br>
 git clone https://github.com/arianna-h-h/Dogs.git. <br>
 Compile and run in the command line using commands:<br>
-Javac Main.java<br>
-Java Main <br>
+javac Main.java<br>
+java Main <br>
 Enter input via keyboard into the command line when prompted. 
